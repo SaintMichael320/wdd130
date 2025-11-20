@@ -1,4 +1,11 @@
+/* Universal Selector Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* CSS Variables */
 :root {
   --primary-color: #0b4f6c;     /* strong blue */
   --secondary-color: #01baef;   /* bright aqua */
@@ -6,13 +13,6 @@
   --accent2-color: #fafafa;     /* light background */
   --heading-font: "Georgia", serif;
   --body-font: "Arial", sans-serif;
-}
-
-/* CSS Reset — Required */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 /* Body Style */
@@ -49,6 +49,12 @@ header nav a {
     text-decoration: none;
     color: var(--primary-color);
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Use --secondary-color on hover */
+header nav a:hover {
+    color: var(--secondary-color);
 }
 
 /* Headings  */
