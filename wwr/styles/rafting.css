@@ -1,0 +1,137 @@
+
+:root {
+  --primary-color: #0b4f6c;     /* strong blue */
+  --secondary-color: #01baef;   /* bright aqua */
+  --accent1-color: #2d2d2d;     /* dark gray text */
+  --accent2-color: #fafafa;     /* light background */
+  --heading-font: "Georgia", serif;
+  --body-font: "Arial", sans-serif;
+}
+
+/* CSS Reset — Required */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: var(--accent2-color);
+}
+
+/* Page Width Limit + Centering */
+header,
+main,
+footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* Make logo and nav sit side-by-side */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;            
+    padding: 16px;
+}
+
+/* Make nav links appear in a row */
+header nav {
+    display: flex;
+    gap: 24px;
+}
+
+/* Ensure links look clean */
+header nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Headings  */
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  text-align: center;
+}
+
+/* Basic Margins + Padding */
+nav,
+p,
+section,
+article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* HERO SECTION STYLES */
+.hero {
+  position: relative;
+}
+
+/* Hero Image — acts as background */
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Overlay Heading on Hero Image */
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+/* Article Overlay on Hero Image */
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  width: 90%;
+  left: 5%;
+  background-color: rgba(250, 250, 250, 0.8);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+/* Image inside article (ONLY this image) */
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+
+/* Footer social media bar */
+footer {
+    text-align: center;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;            /* space between icons */
+    margin-top: 16px;
+}
+
+/* Remove underline from image links (required) */
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* Style the icons */
+.socialmedia img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
