@@ -1,8 +1,8 @@
 /* Universal Selector Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* CSS Variables */
@@ -141,3 +141,35 @@ footer {
     height: 40px;
     display: block;
 }
+
+.adventure {
+    padding: 40px;
+    text-align: center;
+}
+
+.adventure-gallery {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+figure {
+  border: thin silver solid;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 220px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: #222222;
+  color: white;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
