@@ -242,41 +242,26 @@ figcaption {
     font-family: var(--heading-font);
 }
 
-/* Message Purpose two-column layout */
 .form-row {
-  display: grid;
-  grid-template-columns: 140px 1fr;
-  align-items: start;
-  gap: 10px;
-  margin-bottom: 16px;
-}
-
-.form-label-left {
-  font-weight: bold;
-  line-height: 1.2;
-  color: var(--primary-color);
-  font-family: var(--heading-font);
-  white-space: nowrap;
+    text-align: center;
+    background-color: #222222;
+    color: #fff;
 }
 
 .radio-column {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+    text-align: center;
 }
 
-.radio-option {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+.message-box{
+    text-align: center;
+    color: #222222;
+    font-weight: bold
+    
 }
-
 
 /* Checkbox alignment */
 .newsletter-check {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    text-align: center;
 }
 
 /* Submit Button */

@@ -56,32 +56,35 @@
                 <input type="email" id="email" name="email" placeholder="Miller@gmail.com" required>
 
                 <div class="form-row">
-                    <label class="form-label-left">Message<br>Purpose</label>
-
-                    <div class="radio-column">
-                        <label class="radio-option">
-                            <input type="radio" name="purpose" value="general" required>
-                            General Inquiry
-                        </label>
-
-                        <label class="radio-option">
-                            <input type="radio" name="purpose" value="reservation">
-                            Reservation Question
-                        </label>
-
-                        <label class="radio-option">
-                            <input type="radio" name="purpose" value="website">
-                            Website Suggestion
-                        </label>
-                    </div>
+                    <p>Message Purpose</p>
                 </div>
 
-                <label for="message" class="form-label">Message</label>
-                <textarea id="message" name="message" placeholder="Type here." required></textarea>
+                <div class="radio-column">
+                    <label class="radio-option">
+                        <input type="radio" id="purpose-general" name="purpose" value="general" required>
+                        General Inquiry
+                    </label>
 
+                    <label class="radio-option">
+                        <input type="radio" id="purpose-general" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+
+                    <label class="radio-option">
+                        <input type="radio" id="purpose-general" name="purpose" value="website">
+                        Website Suggestion
+                    </label>
+                </div>
+                </div>
+
+                <div class="message-box">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" name="message" placeholder="Type here." required></textarea>
+                </div>
                 <label class="newsletter-check">
-                    <input type="checkbox" name="subscribe">
                     Please Subscribe me to the monthly newsletter
+                    <input type="checkbox" name="subscribe">
+
                 </label>
 
                 <button type="submit" class="submit-btn">Get in Touch!</button>
